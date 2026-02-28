@@ -70,14 +70,22 @@ export function HeroSection() {
           }`}
         >
           {/* Status badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 mb-8">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
-            </span>
-            <span className="text-sm text-muted-foreground font-medium">
-              Available for hire
-            </span>
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+              </span>
+              <span className="text-sm text-muted-foreground font-medium">
+                Available for hire
+              </span>
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2">
+              <span className="text-lg">🇬🇭</span>
+              <span className="text-sm text-muted-foreground font-medium">
+                Based in Ghana, Available Worldwide
+              </span>
+            </div>
           </div>
         </div>
 
