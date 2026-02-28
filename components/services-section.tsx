@@ -6,35 +6,35 @@ import { CodeIcon, ServerIcon, VideoIcon, CameraIcon, ArrowRightIcon } from "./i
 const services = [
   {
     icon: CodeIcon,
-    title: "Web Development",
+    title: "Web & App Development",
     description:
-      "Full-stack web applications built with React, Next.js, TypeScript, and modern frameworks. Responsive, accessible, and blazing fast.",
-    features: ["Custom Web Apps", "E-Commerce", "SaaS Platforms", "APIs & Integrations"],
-    price: "From $500",
+      "Custom websites and mobile-friendly apps built for your business. You can choose to handle deployment yourself or let me handle everything end-to-end.",
+    features: ["App Only (you deploy): from $80 / GHS 1,200", "Full Package (app + deployment + domain): from $150 / GHS 2,250", "E-Commerce & Business Apps", "APIs & Integrations"],
+    price: "From $80 / GHS 1,200",
   },
   {
     icon: ServerIcon,
-    title: "Hosting & DevOps",
+    title: "Website Deployment & Maintenance",
     description:
-      "Reliable hosting solutions, server management, and deployment pipelines. Your application stays online, secure, and performant.",
-    features: ["Cloud Hosting", "Domain Setup", "SSL Certificates", "CI/CD Pipelines"],
-    price: "From $100/mo",
+      "I handle all the technical stuff — hosting, domain setup, SSL, and keeping your site online. You focus on your business.",
+    features: ["Cloud Hosting Setup", "Domain & SSL Configuration", "Monthly Maintenance: from $20 / GHS 300", "Automatic Deployments"],
+    price: "From $20/mo / GHS 300/mo",
   },
   {
     icon: VideoIcon,
     title: "Video Editing",
     description:
-      "Professional video editing for social media, YouTube, corporate content, and promotional material. Cinematic quality guaranteed.",
-    features: ["Social Media Edits", "YouTube Content", "Motion Graphics", "Color Grading"],
-    price: "From $150",
+      "Professional video editing for social media, events, weddings, and promotional content. Fast delivery, clean results.",
+    features: ["Short Clips (Reels, TikTok): from $10 / GHS 150", "Long Form (Events, Weddings): from $30 / GHS 450", "Transitions & Effects", "Color Grading"],
+    price: "From $10 / GHS 150",
   },
   {
     icon: CameraIcon,
     title: "Photo Editing",
     description:
-      "High-end photo retouching, manipulation, and enhancement. From product photography to creative composites.",
-    features: ["Retouching", "Background Removal", "Color Correction", "Composites"],
-    price: "From $50",
+      "Clean, professional photo editing for personal and business use. Product photos, portraits, flyers and more.",
+    features: ["Per Photo: from $2 / GHS 30", "Bulk (10+ photos): from $15 / GHS 225", "Background Removal", "Color Correction & Retouching"],
+    price: "From $2 / GHS 30",
   },
 ]
 
@@ -65,7 +65,7 @@ export function ServicesSection() {
             What I Can <span className="text-primary">Build</span> For You
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            From concept to deployment, I deliver end-to-end solutions tailored to your needs.
+            From concept to deployment, I deliver end-to-end solutions tailored to your needs. All prices are in USD with GHS equivalent shown. Prices are negotiable based on project scope — contact me to discuss!
           </p>
         </div>
 
