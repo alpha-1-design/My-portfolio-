@@ -1,6 +1,7 @@
 "use client"
 
 import { useInView } from "@/hooks/use-in-view"
+import Image from "next/image"
 
 const skills = [
   { name: "App Development (React)", level: 70 },
@@ -74,6 +75,16 @@ export function AboutSection() {
               isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
             }`}
           >
+            <div className="flex justify-center mb-8">
+              <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-xl shadow-primary/10">
+                <Image
+                  src="https://res.cloudinary.com/dcfovqlvr/image/upload/v1772319741/portfolio/oukyk7kzzp6dccuy6fz7.jpg"
+                  alt="Samuel Mensah"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </div>
             <h3 className="text-lg font-semibold text-foreground mb-6">Technical Proficiency</h3>
             <div className="space-y-5">
               {skills.map((skill, index) => (
