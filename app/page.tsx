@@ -11,6 +11,7 @@ import { ParticleField } from "@/components/particle-field"
 import { BackToTop } from "@/components/back-to-top"
 import { SectionDivider } from "@/components/section-divider"
 import { LoadingScreen } from "@/components/loading-screen"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <SectionDivider />
       <Footer />
       <BackToTop />
+      <WhatsAppFloat />
     </main>
   )
 }
