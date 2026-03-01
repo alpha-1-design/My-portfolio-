@@ -2,6 +2,7 @@
 
 import { useInView } from "@/hooks/use-in-view"
 import { CodeIcon, ServerIcon, VideoIcon, CameraIcon, ArrowRightIcon } from "./icons"
+import { TiltCard } from "./tilt-card"
 
 const services = [
   {
@@ -72,12 +73,11 @@ export function ServicesSection() {
         {/* Service Cards */}
         <div className="grid sm:grid-cols-2 gap-6">
           {services.map((service, index) => (
-            <div
+            <TiltCard
               key={service.title}
-              className={`group relative rounded-2xl border border-border bg-card p-8 transition-all duration-500 hover:border-primary/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/5 gradient-border ${
+              className={`group relative rounded-2xl border border-border bg-card p-8 transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 gradient-border ${
                 isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
               }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Icon */}
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-6 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
@@ -115,7 +115,7 @@ export function ServicesSection() {
                   <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
                 </a>
               </div>
-            </div>
+            </TiltCard>
           ))}
         </div>
       </div>

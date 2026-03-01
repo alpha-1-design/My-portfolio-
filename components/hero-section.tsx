@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { ArrowRightIcon, CodeIcon } from "./icons"
+import { MagneticButton } from "./magnetic-button"
 import { AnimatedCounter } from "./animated-counter"
 
 const titles = [
