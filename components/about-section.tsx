@@ -68,24 +68,33 @@ export function AboutSection() {
               </div>
             </div>
             <h3 className="text-lg font-semibold text-foreground mb-6">Technical Proficiency</h3>
-            <div className="space-y-5">
-              {skills.map((skill, index) => (
-                <div key={skill.name}>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                    <span className="text-sm font-mono text-primary">{skill.level}%</span>
+            <div className="grid grid-cols-2 gap-6">
+              {skills.map((skill, index) => {
+                const radius = 36;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (isInView ? skill.level / 100 : 0) * circumference;
+                return (
+                  <div key={skill.name} className="flex flex-col items-center gap-2">
+                    <div className="relative w-20 h-20">
+                      <svg className="w-20 h-20 -rotate-90" viewBox="0 0 80 80">
+                        <circle cx="40" cy="40" r={radius} fill="none" stroke="currentColor" strokeWidth="6" className="text-secondary" />
+                        <circle
+                          cx="40" cy="40" r={radius} fill="none"
+                          stroke="oklch(0.75 0.15 190)" strokeWidth="6"
+                          strokeLinecap="round"
+                          strokeDasharray={circumference}
+                          strokeDashoffset={offset}
+                          style={{ transition: `stroke-dashoffset 1.2s ease ${index * 150 + 400}ms` }}
+                        />
+                      </svg>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="text-sm font-bold text-primary font-mono">{skill.level}%</span>
+                      </div>
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center leading-tight">{skill.name}</span>
                   </div>
-                  <div className="h-1.5 rounded-full bg-secondary overflow-hidden">
-                    <div
-                      className="h-full rounded-full bg-primary transition-all duration-1000 ease-out"
-                      style={{
-                        width: isInView ? `${skill.level}%` : "0%",
-                        transitionDelay: `${index * 100 + 500}ms`,
-                      }}
-                    />
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
