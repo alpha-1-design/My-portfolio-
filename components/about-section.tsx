@@ -40,33 +40,15 @@ export function AboutSection() {
             </h2>
             <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                {`I'm Samuel Mensah, a multidisciplinary developer and creative professional
-                based in Ghana. I specialize in building high-performance web applications,
-                managing robust hosting infrastructures, and producing compelling visual content.`}
+                {`I'm Samuel Mensah — a self-taught developer and creative from Ghana who turns ideas into real digital products. I don't just write code; I solve problems, build businesses, and create experiences people actually use.`}
               </p>
               <p>
-                {`With a passion for clean code and pixel-perfect design, I transform ideas
-                into scalable digital products. Whether it's a complex full-stack application,
-                a cinematic video edit, or a polished photo composition, I bring the same
-                level of precision and dedication to every project.`}
+                {`In one year I've built and deployed a full e-commerce app used by a real business — with payments, push notifications, admin dashboard, and cloud storage. That's what I bring to every project: full commitment until it works.`}
               </p>
-              <p>
-                {`I accept payments in USD, EUR, and GHS (Ghanaian Cedis), making it easy
-                for clients worldwide to work with me.`}
-              </p>
+
             </div>
 
-            {/* Currencies */}
-            <div className="mt-8 flex flex-wrap gap-3">
-              {["USD $", "EUR \u20ac", "GHS \u20b5"].map((currency) => (
-                <span
-                  key={currency}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm font-mono text-primary"
-                >
-                  {currency}
-                </span>
-              ))}
-            </div>
+
           </div>
 
           {/* Right - Skills */}
