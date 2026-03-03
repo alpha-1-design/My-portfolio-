@@ -6,10 +6,10 @@ import { useVisitor } from "./visitor-provider"
 import { CalendarIcon, DollarIcon, CheckIcon, SendIcon } from "./icons"
 
 const serviceOptions = [
-  { value: "web-dev", label: "Web Development", price: "From $500" },
-  { value: "hosting", label: "Hosting & DevOps", price: "From $100/mo" },
-  { value: "video-edit", label: "Video Editing", price: "From $150" },
-  { value: "photo-edit", label: "Photo Editing", price: "From $50" },
+  { value: "web-dev", label: "Web Development", price: "From $80" },
+  { value: "hosting", label: "Hosting & DevOps", price: "From $20/mo" },
+  { value: "video-edit", label: "Video Editing", price: "From $10" },
+  { value: "photo-edit", label: "Photo Editing", price: "From $2" },
 ]
 
 const currencyOptions = [
