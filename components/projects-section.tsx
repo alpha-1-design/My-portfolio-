@@ -118,12 +118,18 @@ export function ProjectsSection() {
                   ))}
                 </div>
                 <div className="flex items-center gap-3">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors">
-                    <GitHubIcon className="w-3.5 h-3.5" /> GitHub
-                  </a>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs text-primary hover:opacity-80 transition-opacity">
-                    <ExternalLinkIcon className="w-3.5 h-3.5" /> Live Demo
-                  </a>
+                  {project.githubUrl !== "#" ? (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors">
+                      <GitHubIcon className="w-3.5 h-3.5" /> GitHub
+                    </a>
+                  ) : null}
+                  {project.liveUrl !== "#" ? (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs text-primary hover:opacity-80 transition-opacity">
+                      <ExternalLinkIcon className="w-3.5 h-3.5" /> Live Demo
+                    </a>
+                  ) : (
+                    <span className="flex items-center gap-1.5 text-xs text-muted-foreground/50 italic">Coming Soon</span>
+                  )}
                 </div>
               </div>
             </div>

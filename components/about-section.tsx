@@ -40,10 +40,13 @@ export function AboutSection() {
             </h2>
             <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                {`I'm Samuel Mensah — a self-taught developer and creative from Ghana who turns ideas into real digital products. I don't just write code; I solve problems, build businesses, and create experiences people actually use.`}
+                {`I'm a passionate web developer and software engineer with a keen eye for design and functionality. My journey in technology has equipped me with diverse skills ranging from full-stack development to creative multimedia production.`}
               </p>
               <p>
-                {`In one year I've built and deployed a full e-commerce app used by a real business — with payments, push notifications, admin dashboard, and cloud storage. That's what I bring to every project: full commitment until it works.`}
+                {`With expertise in modern web technologies and a creative mindset, I transform ideas into elegant, user-friendly digital solutions. Whether it's building responsive websites, developing robust applications, or creating engaging multimedia content, I bring dedication and innovation to every project.`}
+              </p>
+              <p>
+                {`Beyond coding, I enjoy exploring the intersection of technology and creativity through video editing, photo manipulation, and digital design. This multidisciplinary approach allows me to deliver comprehensive solutions that stand out.`}
               </p>
 
             </div>
