@@ -54,8 +54,8 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary transition-all duration-300 group-hover:scale-110 glow-cyan">
-              <span className="text-sm font-bold text-primary-foreground font-mono">S</span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg overflow-hidden transition-all duration-300 group-hover:scale-110">
+              <img src="https://res.cloudinary.com/dcfovqlvr/image/upload/v1772594043/portfolio/kqwcxprit0uz1nso2l8a.png" alt="Samuel Mensah Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-lg font-bold text-foreground tracking-tight hidden sm:block">
               Samuel<span className="text-primary">.</span>
