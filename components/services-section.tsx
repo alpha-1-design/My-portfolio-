@@ -105,16 +105,13 @@ export function ServicesSection() {
                 <p className="text-xs text-muted-foreground leading-relaxed italic">{service.pitch}</p>
               </div>
 
-              {/* Price & CTA */}
-              <div className="flex items-center justify-between pt-6 border-t border-border">
-                <span className="text-lg font-bold text-primary font-mono">
-                  {service.price}
-                </span>
+              {/* CTA */}
+              <div className="flex items-center justify-end pt-6 border-t border-border">
                 <a
                   href="#booking"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors group/link"
                 >
-                  Book now
+                  Get a Quote
                   <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
                 </a>
               </div>
