@@ -191,7 +191,7 @@ ${formState.description}`
                   <option value="">Select a service</option>
                   {serviceOptions.map((s) => (
                     <option key={s.value} value={s.value}>
-                      {s.label} - {s.price}
+                      {s.label}
                     </option>
                   ))}
                 </select>
