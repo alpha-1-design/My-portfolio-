@@ -6,6 +6,16 @@ import Image from "next/image"
 
 const projects = [
   {
+    title: "Privacy First Security Toolkit",
+    description: "A free, open source cybersecurity toolkit that runs entirely in the browser. 13 security tools including phishing detection, AES-256-GCM encryption, JWT decoder, scam detector and more. No accounts. No tracking. 100% local processing.",
+    tags: ["JavaScript", "Web Crypto API", "Security", "Open Source"],
+    liveUrl: "https://privacy-toolkit-ten.vercel.app/",
+    githubUrl: "https://github.com/alpha-1-design/privacy-toolkit",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80",
+    category: "Security",
+    featured: true,
+  },
+  {
     title: "Rehoboth Kitchen App",
     description: "A full-stack e-commerce PWA for a kitchen appliances business in Ghana. Features product listings, cart, orders, admin dashboard, push notifications, and WhatsApp receipts.",
     tags: ["React", "Node.js", "MongoDB", "Cloudinary"],
